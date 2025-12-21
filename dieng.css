@@ -1,0 +1,359 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('background\ assassin\ creed.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+
+}
+
+/* Header Styles */
+header.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #2a2a2a;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header.header img {
+    width: 150px;
+    height: auto;
+}
+
+nav.nav {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav.nav li {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav.nav li:hover {
+    text-decoration: underline;
+}
+
+/* Landing Page Styles */
+.landing-page {
+    background:url(gaming.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh; /* occupe toute la hauteur de l'écran */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+}
+.big-title {
+    color: white;
+    font-size: 100px; /* Texte agrandi */
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5); /* Effet lumineux facultatif */
+}
+.big-title span {
+    color: #ADD981;
+    font-size: 120px;
+}
+.scroll-down {
+    position: absolute;
+    bottom: 10px; /* Distance par rapport au bas */
+    left: 20px;   /* Distance par rapport à gauche */
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.scroll-down:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.scroll-down:hover {
+    color: #ADD981;
+    transform: translateY(5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Service Section */
+.service {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px 30px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.service-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.delivery-icons {
+    font-size: 50px;
+    color: #ADD981;
+    margin-bottom: 20px;
+}
+
+.service-details {
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Best Items Section */
+.section-title {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    color:black;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: #ADD981;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.best-items {
+    margin: 0 50px 100px;
+}
+
+.best-console {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Utilisation de grid */
+    gap: 20px;
+    justify-items: center;
+}
+
+.console-box {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.console-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Ombre plus marquée au survol */
+}
+
+.console1 {
+    background-image: url("Ps5.jpg");
+}
+
+.console2 {
+    background-image: url("xbox.jpg");
+}
+
+.console3 {
+    background-image: url("xbox-series-s.jpg");
+}
+
+.console4 {
+    background-image: url("steamdeck.jpg");
+}
+
+.console-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.console-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.console-price {
+    font-size: 16px;
+    color: black;
+    font-weight: 800;
+}
+
+/* Gaming Zone Section */
+.all-console {
+    margin: 100px 50px;
+}
+
+.console-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.console-grid1, .console-grid2, .console-grid3, .console-grid4, .console-grid5 {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.console-grid1 {
+    background-image: url("Ps5.jpg");
+}
+
+.console-grid2 {
+    background-image: url("souris.jpg");
+}
+
+.console-grid3 {
+    background-image: url("ecouteur.jpg");
+}
+
+.console-grid4 {
+    background-image: url("manette.jpg");
+}
+
+.console-grid5 {
+    background-image: url("PC.jpg");
+}
+
+.console-grid1:hover, .console-grid2:hover, .console-grid3:hover, .console-grid4:hover, .console-grid5:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.console-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* PC Gamers Section */
+.pc-gamers {
+    margin: 100px 50px;
+}
+
+.pc-gamers .console-grid1 {
+    background-image: url("carte\ graphique.webp");
+}
+
+.pc-gamers .console-grid2 {
+    background-image: url("PROCESSEUR\ AMD-Ryzen-9000-series-feature.jpg");
+}
+
+.pc-gamers .console-grid3 {
+    background-image: url("carte\ mere\ asus\ b650.webp");
+}
+
+.pc-gamers .console-grid4 {
+    background-image: url("boitier\ pc\ gamers.jpg");
+}
+
+.pc-gamers .console-grid5 {
+    background-image: url("alimentation\ pc.webp");
+}
+
+.pc-gamers .console-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .console-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .console-box {
+        width: 100%;
+        height: 250px;
+    }
+
+    .best-console {
+        flex-direction: column;
+    }
+
+    .landing-page {
+        height: 80vh;
+    }
+
+    .big-title {
+        font-size: 60px;
+    }
+
+    .scroll-down {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .big-title {
+        font-size: 40px;
+    }
+
+    .scroll-down {
+        font-size: 18px;
+    }
+
+    .console-details {
+        font-size: 14px;
+    }
+}
+/* Style des boutons Ajouter au panier */
+.add-to-cart {
+    background-color: #ADD981;
+    color: #2a2a2a;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #9cc66b;
+    transform: scale(1.05);
+}
